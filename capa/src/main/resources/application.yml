@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    url: jdbc:mysql://localhost/amigos?serverTimezone=UTC
+    username: amigos
+    password: /Morp9KEZkSa(j6.
+server:
+  port: 8060

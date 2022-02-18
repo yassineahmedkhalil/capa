@@ -39,8 +39,8 @@ class EmployeeRepositoryTest {
                 .build();
 
         Employee ahmed = Employee.builder()
-                .firstName("Ahmedccc")
-                .lastName("Yassineccc")
+                .firstName("Ahmed")
+                .lastName("Yassine")
                 .projects(List.of(project1))
                 .build();
 

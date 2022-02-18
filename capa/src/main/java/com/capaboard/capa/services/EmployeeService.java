@@ -46,6 +46,15 @@ public class EmployeeService {
 
         Employee updateEmployee = employeeRepository.findById(id).orElseThrow(() ->
                 new IllegalStateException("Employee does not exist"+ id ));
+        updateEmployee.setLastName(employee.getLastName());
+        updateEmployee.setFirstName(employee.getFirstName());
+
+        Project project = new Project();
+        project.setProjectId(updateProject.getProjectId());
+        project.setProjectName(updateProject.getProjectName());
+        project.setProjectDescription(updateProject.getProjectDescription());
+
+        updateEmployee.setProjects(List.of(project));
 
         employeeRepository.save(updateEmployee);
     }

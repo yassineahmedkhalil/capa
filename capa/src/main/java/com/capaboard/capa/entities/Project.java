@@ -1,7 +1,6 @@
 package com.capaboard.capa.entities;
 
 import lombok.*;
-
 import javax.persistence.*;
 import java.util.List;
 
@@ -44,5 +43,4 @@ public class Project {
             referencedColumnName = "companyId"
     )
     private Company company;
-
 }
